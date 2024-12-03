@@ -34,6 +34,8 @@ html, body{
     justify-content: space-between;
     padding: 20px 40px;
     color: white;
+    
+
 }
 #nav a{
     color: white;
@@ -118,7 +120,7 @@ html, body{
 #second{
    
    width: 100%; 
-   height: 100vh;
+   height: 50vh;
    background-color: black;
    color: white;
    padding-top: 200px;
@@ -156,9 +158,9 @@ html, body{
 }
 /* _____________________________________about_________________________________ */
 #about{
-    width: 100%;
-    /* height: 80vh; */
-    background-color: black;
+    width: 50vw;
+    height: 70vh;
+    background-color: rgb(16, 15, 15);
     color: white;
     display: flex;
     align-items: center;
@@ -171,7 +173,9 @@ html, body{
     border-radius: 49%;
 }
 #textabout{
-    width: 40%;
+    width: 40vw;
+    /* background-color: aqua; */
+
 
 }
 #textabout h5{
@@ -199,4 +203,51 @@ html, body{
 }
 #subscribe h5{
     opacity: .7;
+}
+
+/* -----------------------------responsive ness-------------------------------------- */
+@media(max-width:600px) {
+    #nav{
+        /* background-color: red; */
+        padding: 10px 20px;
+      
+     
+    }
+    #hero{
+        height: 50vh;
+    }
+    #heading h1{
+        font-size: 15vw;
+        margin-top: 4vw;
+    }
+    .cont{
+        height: 15vw;
+    }
+    .blocktext h4{
+        font-size: 3vw;
+    }
+    #miniheading h5{
+        font-size: 3vw;
+    }
+    /* _______________________secontp _______________ */
+    #second{
+        height: 30vh;
+    }
+    .box h1{
+        font-size: 12vw;
+    }
+    .box h5{
+        font-size: 3vw;
+    }
+    #about{
+        margin: 30vw;
+        display:block;
+    }
+    #about img{
+        width: 50vw;
+        height: 40vw;
+    }
+    #about p{
+        font-size: vw;
+    }
 }
